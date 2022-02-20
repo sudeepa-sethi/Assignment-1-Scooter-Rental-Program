@@ -15,6 +15,7 @@ public class Assignment_1
     {
         // Create a Scanner object attached to the keyboard
         Scanner in = new Scanner (System.in);
+        
         //Opening Message that provides prices and rates
         System.out.println("Welcome to Scoot With Us Rentals");
         System.out.println("Our scooter rental rates are as follows:");
@@ -22,18 +23,24 @@ public class Assignment_1
         System.out.println("Hourly Rate : $1.00 to unlock + $0.30/minute");
         System.out.println("Minimum Rental : $5.00");
         System.out.println();
-        System.out.println("Choose Rental Type (D - Daily or H - Hourly): ");
-        String RentalType = in.nextLine().toUpperCase();
+        
+        //User inputs preferences
+        System.out.print("Choose Rental Type (D - Daily or H - Hourly): ");
+        String rentalType = in.nextLine();
+        rentalType.toUpperCase(); //Capitalizing letter
+        System.out.print("How long do you want to rent for? (minutes): ");
+        String minutes = in.nextLine();
         
         //Rental type calculations based on choices inputted
-        if (RentalType.equals("D")){
-        
-        }else
+        if (rentalType.equals("D")){
+                                                                   PUT CALCULATIONS HERE
+    }else //Display amount calculated
         System.out.println("Your charge is " + " for" + " hours");
-        System.out.println("Please confirm if you want to proceed, Y or N: ");
-        String decision = in.nextLine().toUpperCase();
+        System.out.print("Please confirm if you want to proceed, Y or N: ");
+        String decision = in.nextLine()
+        decision.toUpperCase(); //Capitalizing letter
         
-        //Output message if recipient chooses "N"(No)
+        //Output message if recipient chooses "N"
         if (decision.equals("N")){
         System.out.println("Transaction is cancelled");
         System.out.println("              /");
@@ -41,19 +48,18 @@ public class Assignment_1
         System.out.println("Scoot With Us Rentals");
         System.out.println("See you next time");
         
-        //Recipient chooses to proceed and is prompted to enter in personal information for payment
-        }else
-        System.out.println("Enter scooter code:");
-        String ScooterCode = in.nextLine();
+    }else //Recipient chooses "Y" and is prompted to enter in personal information for payment
+        System.out.print("Enter scooter code:");
+        String scooterCode = in.nextLine();
         System.out.println("Enter payment information");
-        System.out.println("Enter Credit Card Type - V(Visa) M(Mastercard) A(Amex): ");
-        String CreditCard = in.nextLine();
-        System.out.println("Card number: ");
-        String CardNumber = in.nextLine();
-        System.out.println("Name on card: ");
-        String Name = in.nextLine();
-        System.out.println("Expiry (MMYY): ");
-        String Expiry = in.nextLine();
+        System.out.print("Enter Credit Card Type - V(Visa) M(Mastercard) A(Amex): ");
+        String creditCard = in.nextLine();
+        System.out.print("Card number: ");
+        String cardNumber = in.nextLine();
+        System.out.print("Name on card: ");
+        String name = in.nextLine();
+        System.out.print("Expiry (MMYY): ");
+        String expiry = in.nextLine();
         System.out.println("Press Enter to unlock and start:");
         in.nextLine();
         System.out.println("Ride safely!");
@@ -70,7 +76,7 @@ public class Assignment_1
         System.out.println("Rental Rate          $"  );
         System.out.println();
         System.out.println("Total                $"  );
-        String LastFourDigits = CardNumber.substring(12, 16); //Pulling last 4 credit card digits
+        String LastFourDigits = cardNumber.substring(12, 16); //Pulling last 4 credit card digits
         System.out.println("Card ..." + LastFourDigits);
         System.out.println();
         System.out.println();
@@ -82,3 +88,4 @@ public class Assignment_1
         System.out.println("See you next time");
     }
 }
+

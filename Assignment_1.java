@@ -1,6 +1,6 @@
 
 /**
- * Assignment_1 – Scooter Rental Program - Provides information on the rental services which includes prices,minimum rent and rental rates.
+ * Assignment_1 ? Scooter Rental Program - Provides information on the rental services which includes prices,minimum rent and rental rates.
  *                                         Allows the customer to pick their preferences on rates and have it calculated automatically.
  *                                         Prints out a receipt on their purchase after personal information has been inputted and payment is completed.
  * 
@@ -62,7 +62,7 @@ public class Assignment_1
         System.out.println("------------------------------");
         System.out.println("+          Receipt           +");
         System.out.println("------------------------------");
-        Date currentDateTime = new Date();
+        Date currentDateTime = new Date(); //Obtain current time and date
         System.out.println("" + new Date());
         System.out.println();
         System.out.println("Initial charge       $"  );
@@ -70,7 +70,7 @@ public class Assignment_1
         System.out.println("Rental Rate          $"  );
         System.out.println();
         System.out.println("Total                $"  );
-        String LastFourDigits = CardNumber.substring(12, 16);
+        String LastFourDigits = CardNumber.substring(12, 16); //Pulling last 4 credit card digits
         System.out.println("Card ..." + LastFourDigits);
         System.out.println();
         System.out.println();

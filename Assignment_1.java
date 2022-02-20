@@ -75,6 +75,10 @@ public class Assignment_1
         System.out.println();
         System.out.println();
         System.out.println("Thank you for renting from us!");
+        System.out.println();
+        System.out.println("              /");
+        System.out.println("             o--o");
+        System.out.println("Scoot With Us Rentals");
+        System.out.println("See you next time");
     }
 }
-

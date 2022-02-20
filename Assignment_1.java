@@ -4,7 +4,7 @@
  *                                         Allows the customer to pick their preferences on rates and have it calculated automatically.
  *                                         Prints out a receipt on their purchase after personal information has been inputted and payment is completed.
  * 
- * @author David Doan 
+ * @author David Doan , Sudeepa Sethi
  * @version (February 20, 2022)
  */
 // Standard import for the Scanner class

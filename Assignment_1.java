@@ -1,6 +1,6 @@
 
 /**
- * Assignment_1 ? Scooter Rental Program - Provides information on the rental services which includes prices,minimum rent and rental rates.
+ * Assignment_1 ? Scooter Rental Program - Provides information on the rental services which includes prices, minimum rent and rental rates.
  *                                         Allows the customer to pick their preferences on rates and have it calculated automatically.
  *                                         Prints out a receipt on their purchase after personal information has been inputted and payment is completed.
  * 
